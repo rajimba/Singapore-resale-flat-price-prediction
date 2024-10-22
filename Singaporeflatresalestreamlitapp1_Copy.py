@@ -5,7 +5,7 @@ import numpy as np
 from streamlit_option_menu import option_menu
 import sklearn
 import pickle
-from sklearn.externals import joblib
+import joblib
 from joblib import load
 
 
