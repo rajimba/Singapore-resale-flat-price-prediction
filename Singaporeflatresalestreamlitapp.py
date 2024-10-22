@@ -119,10 +119,10 @@ elif select=='Modelling':
 
             st.table(input_data_)
 
-            with open('https://github.com/rajimba/Singapore-resale-flat-price-prediction/blob/main/dcr.pkl', 'rb') as file:
+            with open('dcr.pkl, 'rb') as file:
                dcr = pickle.load(file)
 
-            with open('https://github.com/rajimba/Singapore-resale-flat-price-prediction/blob/main/OE.pkl', 'rb') as file2:
+            with open('OE.pkl', 'rb') as file2:
                loaded_Encoder = pickle.load(file2)
 
             with open('https://github.com/rajimba/Singapore-resale-flat-price-prediction/blob/main/OE1.pkl', 'rb') as file2:
