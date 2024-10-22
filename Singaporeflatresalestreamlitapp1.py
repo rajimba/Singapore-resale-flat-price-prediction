@@ -126,20 +126,20 @@ elif select=='Modelling':
             with open('C:/Users/rajij/Streamlit_Home Page/Singapore flat resale model/OE.pkl', 'rb') as file2:
                loaded_Encoder = pickle.load(file2)
 
-            with open('C:/Users/rajij/Streamlit_Home Page/Singapore flat resale model/OE1.pkl', 'rb') as file2:
+            with open('OE1.pkl', 'rb') as file2:
                loaded_Encoder1 = pickle.load(file2)
 
-            with open('C:/Users/rajij/Streamlit_Home Page/Singapore flat resale model/OE2.pkl', 'rb') as file2:
+            with open('OE2.pkl', 'rb') as file2:
                loaded_Encoder2 = pickle.load(file2)
 
-            with open('C:/Users/rajij/Streamlit_Home Page/Singapore flat resale model/OE3.pkl', 'rb') as file2:
+            with open('OE3.pkl', 'rb') as file2:
                loaded_Encoder3 = pickle.load(file2)
 
-            with open('C:/Users/rajij/Streamlit_Home Page/Singapore flat resale model/OE4.pkl', 'rb') as file2:
+            with open('OE4.pkl', 'rb') as file2:
                loaded_Encoder4 = pickle.load(file2)
 
 
-            with open('C:/Users/rajij/Streamlit_Home Page/Singapore flat resale model/scaler.pkl', 'rb') as file3:
+            with open('scaler.pkl', 'rb') as file3:
                loaded_scaler = pickle.load(file3)
 
 
