@@ -119,26 +119,26 @@ elif select=='Modelling':
 
             st.table(input_data_)
 
-            with open('dcr.pkl, 'rb') as file:
+            with open('dcr.pkl', 'rb') as file:
                dcr = pickle.load(file)
 
             with open('OE.pkl', 'rb') as file2:
                loaded_Encoder = pickle.load(file2)
 
-            with open('https://github.com/rajimba/Singapore-resale-flat-price-prediction/blob/main/OE1.pkl', 'rb') as file2:
+            with open('OE1.pkl', 'rb') as file2:
                loaded_Encoder1 = pickle.load(file2)
 
-            with open('https://github.com/rajimba/Singapore-resale-flat-price-prediction/blob/main/OE2.pkl', 'rb') as file2:
+            with open('OE2.pkl', 'rb') as file2:
                loaded_Encoder2 = pickle.load(file2)
 
-            with open('https://github.com/rajimba/Singapore-resale-flat-price-prediction/blob/main/OE3.pkl', 'rb') as file2:
+            with open('OE3.pkl', 'rb') as file2:
                loaded_Encoder3 = pickle.load(file2)
 
-            with open('https://github.com/rajimba/Singapore-resale-flat-price-prediction/blob/main/OE4.pkl', 'rb') as file2:
+            with open('OE4.pkl', 'rb') as file2:
                loaded_Encoder4 = pickle.load(file2)
 
 
-            with open('https://github.com/rajimba/Singapore-resale-flat-price-prediction/blob/main/scaler.pkl', 'rb') as file3:
+            with open('scaler.pkl', 'rb') as file3:
                loaded_scaler = pickle.load(file3)
 
 
