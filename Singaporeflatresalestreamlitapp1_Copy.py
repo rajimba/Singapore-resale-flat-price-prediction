@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pickle
-
+from joblib import load
 import numpy as np
 from streamlit_option_menu import option_menu
 import sklearn
@@ -119,34 +118,18 @@ elif select=='Modelling':
             input_data_ = pd.DataFrame(input_data)
 
             st.table(input_data_)
-
-            with open('dcr.pkl', 'rb') as file:
-               dcr = pickle.load(file)
-
-            with open('OE.pkl', 'rb') as file2:
-               loaded_Encoder = pickle.load(file2)
-
-            with open('OE1.pkl', 'rb') as file2:
-               loaded_Encoder1 = pickle.load(file2)
-
-            with open('OE2.pkl', 'rb') as file2:
-               loaded_Encoder2 = pickle.load(file2)
-
-            with open('OE3.pkl', 'rb') as file2:
-               loaded_Encoder3 = pickle.load(file2)
-
-            with open('OE4.pkl', 'rb') as file2:
-               loaded_Encoder4 = pickle.load(file2)
+         
 
 
-            with open('scaler.pkl', 'rb') as file3:
-               loaded_scaler = pickle.load(file3)
+            dcr = load('DCR.joblib')
+            loaded_Encoder = load('OE.joblib')
+            loaded_Encoder1 = load('OE1.joblib')
+            loaded_Encoder2 = load('OE2.joblib')
+            loaded_Encoder3 = load('OE3.joblib')
+            loaded_Encoder4 = load('OE4.joblib')
+            loaded_scaler = load('scaler.joblib')
 
-
-
-
-
-            
+           
 
             input_data_['town'] = loaded_Encoder.transform(input_data_[['town']])
             input_data_['flat_type'] = loaded_Encoder1.transform(input_data_[['flat_type']])
