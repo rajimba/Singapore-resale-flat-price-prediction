@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 from streamlit_option_menu import option_menu
-import scikit-learn
+#import scikit-learn
 
 from sklearn.preprocessing import OrdinalEncoder
 from sklearn.preprocessing import StandardScaler
