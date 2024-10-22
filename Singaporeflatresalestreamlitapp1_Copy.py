@@ -1,9 +1,13 @@
 import streamlit as st
 import pandas as pd
-from joblib import load
+
 import numpy as np
 from streamlit_option_menu import option_menu
 import sklearn
+import pickle
+from sklearn.externals import joblib
+from joblib import load
+
 
 from sklearn.preprocessing import OrdinalEncoder
 from sklearn.preprocessing import StandardScaler
