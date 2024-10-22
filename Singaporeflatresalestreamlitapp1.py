@@ -17,8 +17,6 @@ with st.sidebar:
 if select =="HomePage":
  st.title("Singapore  Resale Flat Prices Predicting Model")
  st.subheader("Singapore  Resale Flat Prices Predicting Model using Pythonscripting, Data Preprocessing, EDA, and Streamlit ")
- image_path = "C:/Users/rajij/Downloads/singapore image.jpg" 
- st.image(image_path, use_column_width=1000)
 
 elif select=='Modelling':
 
@@ -123,7 +121,7 @@ elif select=='Modelling':
             with open('dcr.pkl', 'rb') as file:
                dcr = pickle.load(file)
 
-            with open('C:/Users/rajij/Streamlit_Home Page/Singapore flat resale model/OE.pkl', 'rb') as file2:
+            with open('OE.pkl', 'rb') as file2:
                loaded_Encoder = pickle.load(file2)
 
             with open('OE1.pkl', 'rb') as file2:
