@@ -120,7 +120,7 @@ elif select=='Modelling':
 
             st.table(input_data_)
 
-            with open('C:/Users/rajij/Streamlit_Home Page/Singapore flat resale model/dcr.pkl', 'rb') as file:
+            with open('dcr.pkl', 'rb') as file:
                dcr = pickle.load(file)
 
             with open('C:/Users/rajij/Streamlit_Home Page/Singapore flat resale model/OE.pkl', 'rb') as file2:
