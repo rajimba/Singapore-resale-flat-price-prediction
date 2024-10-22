@@ -1,0 +1,8 @@
+streamlit
+pandas
+pickle
+numpy as np
+streamlit_option_menu
+sklearn
+OrdinalEncoder
+StandardScaler
