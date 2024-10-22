@@ -8,6 +8,8 @@ import sklearn
 
 from sklearn.preprocessing import OrdinalEncoder
 from sklearn.preprocessing import StandardScaler
+from joblib import load
+
 
 st.set_page_config(layout='wide')
 
@@ -118,33 +120,21 @@ elif select=='Modelling':
 
             st.table(input_data_)
 
-            with open('dcr.pkl', 'rb') as file:
-               dcr = pickle.load(file)
+            dcr = load('DCR.joblib')
+                      
+            loaded_Encoder = load('OEJ.joblib')
 
-            with open('OE.pkl', 'rb') as file2:
-               loaded_Encoder = pickle.load(file2)
+            loaded_Encoder1 = load('OEJ1.joblib')
 
-            with open('OE1.pkl', 'rb') as file2:
-               loaded_Encoder1 = pickle.load(file2)
+            loaded_Encoder2 = load('OEJ2.joblib')
 
-            with open('OE2.pkl', 'rb') as file2:
-               loaded_Encoder2 = pickle.load(file2)
+             loaded_Encoder3 = load('OEJ3.joblib')
 
-            with open('OE3.pkl', 'rb') as file2:
-               loaded_Encoder3 = pickle.load(file2)
+             loaded_Encoder4 = load('OEJ4.joblib')
+        
+             loaded_scaler = load('scaler.joblib')
 
-            with open('OE4.pkl', 'rb') as file2:
-               loaded_Encoder4 = pickle.load(file2)
-
-
-            with open('scaler.pkl', 'rb') as file3:
-               loaded_scaler = pickle.load(file3)
-
-
-
-
-
-            
+          
 
             input_data_['town'] = loaded_Encoder.transform(input_data_[['town']])
             input_data_['flat_type'] = loaded_Encoder1.transform(input_data_[['flat_type']])
