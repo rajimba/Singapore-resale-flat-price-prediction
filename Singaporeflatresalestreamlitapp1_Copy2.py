@@ -16,8 +16,7 @@ with st.sidebar:
 if select =="HomePage":
  st.title("Singapore  Resale Flat Prices Predicting Model")
  st.subheader("Singapore  Resale Flat Prices Predicting Model using Pythonscripting, Data Preprocessing, EDA, and Streamlit ")
- image_path = "C:/Users/rajij/Downloads/singapore image.jpg" 
- st.image(image_path, use_column_width=1000)
+
 
 elif select=='Modelling':
 
